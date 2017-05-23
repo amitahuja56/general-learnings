@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inheritance</title>
+</head>
+<body>
+<script type="text/javascript">
+	function Animal(voice) {
+		this.voice=voice;
+	};
+	Animal.prototype.speak=function(){
+		console.log(this.voice);
+	}
+
+	function Cat(name,color) {
+		Animal.call(this, 'meowwwwwwwwwwww')
+		this.name=name;
+		this.color=color;	
+	};
+
+	Cat.prototype=Object.create(Animal.prototype);
+	Cat.prototype.constructor=Cat;
+	var tom = new Cat('tom', 'black');
+	tom.speak();
+</script>
+</body>
+</html>
