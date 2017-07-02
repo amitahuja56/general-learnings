@@ -1,0 +1,18 @@
+performance hacks for photoshop
+
+hit Ctrl + K
+
+1.file handling -> image preview -> never save
+
+2.performnace -> less history settings.
+
+3. cache seetings -> leave at 4
+
+
+normal
+make layers samll thumbmails
+
+uninstall photoshop fonts u dont need
+
+
+ 
