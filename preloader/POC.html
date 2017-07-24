@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style type="text/css">
+  .bimage{
+   background-image: url('bimage.jpg');
+   opacity: 1;
+   width: 500px;
+   height: 500px;
+  }
+
+</style>
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+    
+
+    <div style="display:block" id="loader">loader here</div>
+    <p class="bimage" id="bimage"></p>
+    <div id="demo"></div>
+    
+    <img src="http://deelay.me/1000/http://lorempixel.com/400/200">
+    
+    <div style="display:none" id="myDiv" <h2>Tada!</h2>
+        <p>Some text in my newly loaded page..</p>
+    </div>
+   
+    <script>
+    var p = 10;
+
+    function timeout_trigger() {
+
+        document.getElementById("demo").innerHTML = p;
+        document.getElementById("bimage").style.opacity = p/100;
+
+        if (p != 100) {
+            console.log('hi');
+            setTimeout('timeout_trigger()', 50);
+        }
+        p++;
+    }
+    timeout_trigger();
+
+    function myFunction() {
+        document.getElementById("myDiv").style.display = "block";
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("demo").style.display = "none";
+        document.getElementById("bimage").style.display = "none";
+    }
+    </script>
+</body>
+
+</html>
