@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+	<style type="text/css">
+		#loader-cont {
+  width: 200px;
+  height: 20px;
+  position: relative;
+  border: 1px solid #000;
+}
+
+.loader-bar {
+  /* width: 20%; */
+  height: 100%;
+  //position: absolute;
+  //top: 0;
+  //left: 0;
+  background: #F00;
+}
+	</style>
+
+</head>
+<body>
+<div id="loader-cont">
+  <div class="loader-bar"></div>
+</div>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://code.createjs.com/preloadjs-0.6.2.min.js"></script>
+<script type="text/javascript">
+	var $loaderCont = $('#loader-cont');
+var $loaderBar = $('.loader-bar', $loaderCont);
+
+var loader = new createjs.LoadQueue(true);
+loader.onProgress = handleProgress;
+loader.loadManifest([{
+  id: 'bigImage',
+  src: 'http://www.claybavor.com/projects/google_photomosaic/Google_Photo_Wall_Large_IMG_2567.jpg'
+}, {
+  id: 'bigImage2',
+  src: 'http://large.stanford.edu/courses/2007/ph210/vo2/images/f1big.jpg'
+}, {
+  id: 'bigImage3',
+  src: 'http://img691.imageshack.us/img691/9573/swtheforceunleashedart1.jpg'
+}]);
+loader.onComplete = handleLoadComplete;
+loader.load();
+
+function handleProgress() {
+  //console.log(this.progress);
+  var percent = Math.floor(this.progress * 100);
+  $loaderBar.css({
+    width: percent + '%'
+  });
+}
+
+function handleLoadComplete() {
+  alert('done');
+}
+
+</script>
+</body>
+</html>
