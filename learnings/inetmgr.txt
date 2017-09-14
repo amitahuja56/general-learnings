@@ -1,0 +1,6 @@
+IIS manager /////inetmgr
+
+
+npm run MVC
+
+npm run start
