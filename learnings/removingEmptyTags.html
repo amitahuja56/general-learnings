@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		p{
+			background: red;
+			margin-bottom: 100px;
+		}
+	
+	</style>
+</head>
+<body>
+<div>
+	<p>hey</p>
+	
+	<h3> <p></p>   </h3>
+
+	<h2>1<p></p></h2>
+	<p><label>1</label></p>
+	<p>hello again</p>
+
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+
+  $('p').each(function (item) {
+  	if($(this).html().trim() == ''){
+  			console.log($(this).children());
+  			console.log($(this).childElement());
+  			  			$(this).remove();
+  	}
+  	else{
+  		console.log($(this).children());
+  		console.log(this);
+  	}
+  	// body...
+  })
+  </script>
+</body>
+</html>
