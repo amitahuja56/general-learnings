@@ -1,0 +1,17 @@
+/**
+ * let,const = replacer for var.
+ * let and const is providing better block level scoping
+ * const helps to pervent variable to be reinitalized
+ * Note: In react, use always either let or const dont use var
+ * let name ='Subramanian'
+ * let -keyword,name-variable,'subramanian' - literal
+ *literals-number,string,boolean,undefined,NaN,infinity,null,object,function
+ * 
+ */
+
+let name = 'Subramanian';
+const pi = 3.14;
+//pi = 888;
+
+console.log(name);
+console.log(pi);

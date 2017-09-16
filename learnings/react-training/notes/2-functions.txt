@@ -1,0 +1,62 @@
+**
+ * Functions
+ * Function declarations and invocation
+ * 1.function flavs
+ *
+ */
+//flav1
+function sayHello() {
+    console.log('hello');
+}
+sayHello();
+//flav 2-Function as a literal
+//Literal means can be assigend to variable.
+//variable which holding function can be used to invoke function.
+//2.1
+
+//arguments and parameters
+//arugments - receiver
+//parameters - passing
+function sayHai(name='default') {
+     //name=name || 'defalt'
+   // console.log('hai' +name);
+    return `hai ${name}`; 
+}
+let hai = sayHai;
+hai('subramanian');
+hai();
+//2.2
+let greet = function sayGreet() {
+    console.log('greet!');
+};
+greet();
+//2.3
+let greetMe = function(name='') {
+    console.log('greet!',name);
+};
+greetMe('test'); 
+////////////////////////////////////////////////////////////////
+///ES 6 Style function=Arrow = lamdas expressions => ,->
+
+//let greetings =(name='')=>console.log('greet!',name);
+//let greetings = name=>console.log('greet!',name);
+//let greetings = name => name;
+//console.log(greetings('test')); 
+let greetings = (name='', message='') => {
+    let newMessage = `${name}${message}`;
+    return newMessage;
+};
+console.log(greetings('subramanian', 'hello'));
+
+//////////////////////////////////////////////////////////////////
+//How to pass function as parameter to another function?
+
+
+
+let welcome = cb => {
+    //event binding
+    setTimeout(() => { cb() }, 2000);
+}
+let greetcb = () => console.log('hello');
+//welcome(greetcb);
+welcome(() => console.log('Hello'));

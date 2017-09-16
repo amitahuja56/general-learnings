@@ -1,0 +1,184 @@
+----facebook cli setup
+
+npm install create-react-app -g
+
+based on webpack setup
+
+----ES6
+
+Topics required for reacta are:
+
+1. let const
+2. arrow functions
+3. classes
+
+In redux
+
+4. spread
+5. object destructuring
+
+Q. When does the hoisting happen?
+
+
+parse start -->model forms leaxical tree--> (but memoery is added at the time of execution)
+during compilation time
+
+
+so if condtion is false....var gets undefined....
+then IIFE we can use.... to maintain
+scope
+
+so use let--> which at the backend the of the writes an IIFE for you.
+
+
+Q.datatypes:
+number 64bit---double rep by default
+boolean-
+string-
+undefined- no valid literal
+NaN- Another predefined lteral.....numberial error....
+inifinity- another literal divided 
+null-
+object-
+function- not there in another language....soul of JS ...funtional programing/....
+
+***not recommended class patetrn
+
+
+
+3 tyoes of strinf ==
+""
+''
+`` 
+for est6 :
+console.log(`Name ${name}`);  is similar to consol.log('Name: ' +name);
+
+------------------------------------------------------------------------
+
+function flavours:
+
+
+curry functions then callbacks also HOF
+higer order funtions
+/////
+function sayHai(){
+};
+let hai = sayHai;
+
+like C pointer...this holds the pointer ref to definitation.
+///////
+
+let greet = function sayGreet(){
+
+}
+greet();
+
+cant use sayGreet() thngs at all only greet
+///////////////////////////////////////////////
+
+default parameters are there in the ES6
+
+works for undefined or null or NaN-are falsy....works for empty string and 0........
+
+add(num = 'default' ){
+}
+
+0 fasle null undefined '' NaN-genreal false values
+
+
+
+concureency-async-same
+
+concureency-----------------
+1- threads -thread manager....all c, c++ 
+2- event lop---why not thread>?> issues.....so eventloop architecture came.....
+
+JS enigne is single thread.....but has benifits ovr threads.....
+most popualrize by node
+
+threfore, progaming using callbacks....for concureency
+
+
+any program has two states....passsive(HD) ....active(RAM)
+
+
+
+heap-dyn stack-dyn program data-pass
+
+100 lines
+1 line allocated memoery
+99 in PD
+
+
+stcak frame--active functoin
+
+stack---only one funtuon at once--SF
+
+making two SF together----concureency
+
+
+then ... it is done by time sharing
+
+
+///////////bind the functoin----to event----so that funtion goes to queue.....and then SF when even is fired,,,
+
+
+tyes of event:
+mouse click and all :P
+
+
+==========
+network event-ajax
+gui event- mouse
+timer event - setTime
+
+Whenever event is emitted the queed entr the stack
+
+read about bind and call
+
+
+heaps....
+evrey process has neeed of heap...memory allocation....dynamic memory allocation.
+allocated on fly...
+
+stack mm=ekory is used by the only funition
+
+
+object is basciaaly memoery that can reused;
+
+funtuon-stack
+funtion passed as param and event is binded- queue
+function decl with new - pushed to heap.
+
+
+
+inheritance-----exteds
+super is a ref to a parent class......this is ref to present clss....super.somthi()
+
+static variables is not on heap......its on PD...
+anyways... 
+
+
+why require js?
+diff bw common and amd!
+
+
+link two files and then donot write export...then its priavte!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
