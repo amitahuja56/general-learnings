@@ -1,0 +1,47 @@
+//what are the default values of state and props.
+//state is instance os Compontnt.....deafault i null.......for props its empty objet
+
+
+call and apply immmediate invokng....to attch the function to other objet
+
+memoory is object as in context: 
+
+funtions run in context.
+
+as in diff object
+
+
+bind(lazy invokation) just keeps the object ref but dont execute......
+
+=======================================================================================
+
+
+bind clones the method....and works on trigger
+
+==========================================================================================
+
+the tree comparison is highly efficient,,,,, text compariosn.....
+....
+new react-fibre is now with new algorith 
+
+
+read on : how does the virtual dom works
+
+and 
+
+Object destrcturing
+
+==========================================================================================
+
+nOte:
+
+forEach returns item....
+map resturns array....
+
+
+3  types layouts:
+list- li
+grid-table
+card layouts-divs
+
+==========================================================================================

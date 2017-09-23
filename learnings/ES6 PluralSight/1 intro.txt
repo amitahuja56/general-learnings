@@ -1,0 +1,35 @@
+ECMA Script 2015...
+chrome support 96%;
+---------------------------------------------------------------------
+
+http://kangax.github.io/compat-table/es6/ 
+compatibility
+
+--------------------------------------
+let keyword is not hoisted 
+let makes sure that varible declaration takes place before it gets used.
+
+helps in clousres case(need to learn clousres)
+
+block scope
+------------------------------------
+Const
+whenever we use a const keyword to declare a variable we must intilize it. Otherwise it shows error. 
+Syntax error: unexpected token
+--------------------------------------------
+
+When we use arrow funtions.....its useless to use call bind and apply...as we cannot change the 
+ref of this in them
+
+
+
+this tells us one more thing....that we cannot have the acees to prototype if we have the functions 
+as arrow funtions,,,,,,
+means .....has ownProperty will return to false
+
+
+
+---------------------------------------------------
+
+Addition (arguments);
+var Addition = funtion(paramenters);

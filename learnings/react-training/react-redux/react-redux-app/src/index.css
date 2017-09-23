@@ -1,5 +1,50 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background: green;
+    font-size: 28px;
+    display: block;
+    padding: 40px 20px;
+}
+
+.c-wrap {
+    background: yellow;
+    width: 960px;
+    min-width: 100%;
+}
+
+.c-item-wrap {
+    padding: 10px;
+    background: red;
+    width: 30%;
+    margin-right: 2%;
+    display: inline-block;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.c-item-img-wrap {
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 25%;
+    text-align: center;
+}
+
+.c-item-img-wrap img {
+    width: 100%;
+}
+
+.c-item-content-wrap {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
 }

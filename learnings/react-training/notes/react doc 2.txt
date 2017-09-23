@@ -1,0 +1,31 @@
+React doc 2:
+
+--for heavy data application.
+--uses virtual computing... dom not modified directly....simulates virtual dom......then compares ...than it works.
+--user interface library
+--aims to provide consistent UI no matter how much data changeed
+--aims predicitbility possoble through component(objecv) driven approac,,,,using declarative programmming tech.....
+
+declarative is inside one name....or tag....
+angukar is declarative
+c JS are imperative
+
+so to make JS declarative we use JSX
+-------------------------------------------
+
+no need to do impeerative(array loop and all) dom manipulation like jQuery
+
+
+
+-------------------
+learn diff between server side remndereing and client side rendering
+
+than we can learn for progressive web apps/....next.js......./ performance measures
+
+---------------------------------------------------------------
+
+virtua dom comes into piocture when the view is ready
+
+-----------------------------------------------------------------
+
+
