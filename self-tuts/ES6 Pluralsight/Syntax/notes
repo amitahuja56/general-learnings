@@ -1,0 +1,62 @@
+///let
+
+
+1.let is never hoisted;
+2.using let makes sure that we first declare it before its being used.
+3.let is block scoped. eg for for loop
+4. when block terminates varible terminates as well
+
+Closuers:
+functiuon with preserved data.
+
+Const:
+It must always be intilized when declaring.other wise syntax error;
+
+Arrow:
+main role of it is to handle the this keyword. This preserve the context of the code. and this always shows the context pf the code we are running., not the objcet.
+
+for eg on click events ..this refers to the context of code ...eg window amd not the element of the event.
+
+
+bind, call and apply cannot be added to arrow functions...as we cannot change the value of this.
+
+arow functions dont have access to the prototypes.
+
+
+Object Literals:
+
+no longer 
+key:key
+
+var objcet = {
+	
+	prop1,
+	prop2,
+	meth(){
+			//here this refers to the conotext of code(parent) as in arrow..... only if we use shorthand
+	}
+}
+
+
+--using varible name as a key
+
+	[keyVariable] : 'some'
+
+
+	wrap the key in [ ];
+
+For of Loop
+
+Can be used to iterate over a string as well
+ eg: str = "abc"
+
+ (var ele of str){
+ 		ele will refer to single char as well
+ }
+=============================================
+template literals ` in back ticks` can be used for 
+-interpolation 
+-maintining the white ticks
+
+============================================================================================
+

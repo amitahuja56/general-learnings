@@ -1,0 +1,27 @@
+////////////
+symbols
+
+let a = symbol('uch bhi');
+
+this gives a unique key to it
+
+
+and there are 
+
+well known symbols for it as well.
+
+
+/////////////
+
+object extensions
+
+let a ={a:'sadsad'}, b={b:'ddsdasdsa'}, target={};
+Object.assign(target, a, b);
+
+then one more...
+
+
+Object.is(); ////// ===
+
+
+does the same work more logically

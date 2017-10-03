@@ -1,0 +1,51 @@
+//modules
+
+import statements gets hoisted.
+
+
+-you can import default without using the {}
+-also * as values will import evrything as an object.
+
+
+Named exportd:
+-Call a function and change its properties and it will always be in sync.
+-direect names are readonly 
+-but inside properties can be modified
+
+
+The same way of ES5 adding the function in a prototype and calling it is same in ES6.
+Just the syntax is bit different.
+
+you cannot declare valiables in class body.
+
+eg
+
+class Book{
+	
+	// let a = 1; is a syntax error
+
+	constructor(){
+
+	}
+	meth(){
+
+	}
+}
+
+-Classes are not hoisted.
+
+major diff;
+
+contructor function this can be changed/ can be used by call 
+
+but classes cannot be used by call
+
+
+-also creating a class doesnot pollute the global name space......but constructor function of ES5 automatically attaches to the  global name space.
+
+
+-----------------------------------------------------
+using super is valid ....for both inside objects and classes....just need to assign prototype incase of the objects
+
+
+static methods are attaced to the class in ES6 and not to the instance  in ES6
