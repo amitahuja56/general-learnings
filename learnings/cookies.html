@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+  src="http://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+<script>
+var x = $.cookie("mohit");
+$.cookie("mohit", 11);
+
+console.log(x);
+if (x == 11 ){
+    console.log('ye cookie hai');
+}
+
+var y = localStorage.getItem('yo');
+
+localStorage.setItem("yo", 'amit');
+
+console.log(y);
+
+</script>
+</head>
+<body>
+</body>
+</html>

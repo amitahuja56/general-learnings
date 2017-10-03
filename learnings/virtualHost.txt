@@ -1,0 +1,16 @@
+C:\Windows\System32\drivers\etc
+
+127.0.0.1 local.cfc.com
+127.0.0.1 local.88china.com
+
+C:\xampp\apache\conf\extra
+
+
+<VirtualHost *:80>
+	DocumentRoot "D:/CFC/delta-cfc-campaign"
+    ServerName local.cfc.com
+</VirtualHost>
+<VirtualHost *:80>
+	DocumentRoot "D:\delta-china-88annv"
+    ServerName local.88china.com
+</VirtualHost>

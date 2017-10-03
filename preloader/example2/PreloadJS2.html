@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>making a loader proto</title>
+    <style type="text/css">
+    html,body{
+    	width: 100%;
+    	height: 100%;
+    }
+    #loaderImage {
+        background: url('bkimg.jpg') no-repeat center;
+        opacity: 1;
+        width: 500px;
+        height: 500px;
+    }
+    #homepage{
+    	transform: translate(40%, 50%);
+    }
+    #loaderText, #loadingPercent{
+    	transform: translate(25%, 50%);
+    }
+   #loaderImage{
+   	transform: translate(25%, 30%);
+    }
+ 
+    </style>
+</head>
+
+<body onload="myfunc()">
+    <div id="loaderImage"></div>
+    <p id="loaderText">Loading</p>
+    <div id="loadingPercent"></div>
+    <div style="display:none" id="homepage">
+        <h1>Welcome</h1>
+        <h2>Page is loaded</h2></div>
+    <script type="text/javascript" src="preloadjs-NEXT.combined.js"></script>
+    <script type="text/javascript">
+    var queue = new createjs.LoadQueue(true);
+    console.log(queue);
+
+    queue.on("complete", handleComplete, this);
+    queue.on("progress", handleprogress, this);
+
+    queue.loadFile("http://lorempixel.com/400/200");
+    queue.loadFile("background_image.png");
+    queue.loadFile("bimage.jpg");
+    queue.loadFile("home_page_background_img.png");
+    queue.loadFile("background_image.png");
+    queue.loadFile("bimage.jpg");
+    queue.loadFile("home_page_background_img.png");
+    queue.loadFile("background_image.png");
+    queue.loadFile("bimage.jpg");
+    queue.loadFile("home_page_background_img.png");
+    queue.loadFile("background_image.png");
+    queue.loadFile("bimage.jpg");
+    queue.loadFile("home_page_background_img.png");
+    queue.loadFile("background_image.png");
+    queue.loadFile("bimage.jpg");
+    queue.loadFile("home_page_background_img.png");
+    queue.loadFile("background_image.png");
+    queue.loadFile("bimage.jpg");
+    queue.loadFile("home_page_background_img.png");
+    queue.loadFile("background_image.png");
+    queue.loadFile("bimage.jpg");
+    queue.loadFile("home_page_background_img.png");
+    queue.loadFile("background_image.png");
+    queue.loadFile("bimage.jpg");
+    queue.loadFile("home_page_background_img.png");
+    queue.loadFile("background_image.png");
+    queue.loadFile("bimage.jpg");
+    queue.loadFile("home_page_background_img.png");
+    queue.loadFile("background_image.png");
+    queue.loadFile("bimage.jpg");
+    queue.loadFile("home_page_background_img.png");
+    queue.loadFile("background_image.png");
+    queue.loadFile("bimage.jpg");
+    queue.loadFile("home_page_background_img.png");
+    queue.loadFile("background_image.png");
+    queue.loadFile("bimage.jpg");
+
+    queue.load();
+
+    function handleComplete(event) {
+        // console.log(event);
+        console.log('done');
+        document.getElementById("homepage").style.display = "block";
+        document.getElementById("loaderImage").style.display = "none";
+        document.getElementById("loaderText").style.display = "none";
+        document.getElementById("loadingPercent").style.display = "none";
+         console.log(window.performance.timing);
+    }
+
+    function handleprogress(event) {
+        var loadingPercent = event.loaded;
+        console.log(window.performance.timimg);
+        // console.log(loadingPercent);
+        document.getElementById("loaderImage").style.opacity = loadingPercent;
+        document.getElementById("loadingPercent").innerHTML = loadingPercent * 100;
+
+    }
+    function myfunc() {
+    	 console.log(window.performance.timing);
+    	// body...
+    }
+
+    console.log(window.performance.timing);
+    </script>
+</body>
+
+</html>
