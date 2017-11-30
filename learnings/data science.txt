@@ -1,0 +1,26 @@
+Topics for learning DS Maths
+
+Standard Deviation- in khan academy 
+Variance- in khan academy ,
+Correlation Computation- in khan academy 
+Conditional Probability - in khan academy, 
+CLT, 
+
+Hypothesis Testing, 
+Distribution Analysis -some content, 
+Multicolinearity Analysis,
+Joint, 
+Bayes Theorem 
+
+---------------------------------------------------------
+
+
+Topics for pyhton Data structure
+
+Python Data Structure, 
+Comprehensions, 
+Python Classes, 
+Object Creation, 
+Running Python Program
+
+https://www.capitalone.co.uk/creditcards/secure/sign-in.jsf 
