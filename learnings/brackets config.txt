@@ -1,0 +1,5 @@
+1. delkos dark theme
+2. comd + shift + l beautify
+3. brackets file tab
+4. Brackets Icons
+5. Brackets Css Color Preview
