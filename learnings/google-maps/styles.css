@@ -5,6 +5,7 @@ body {
 }
 
 #mapDiv {
-    width: 700px;
-    height: 500px;
+    margin: 0 auto;
+    width: 80%;
+    height: 80vh;
 }
