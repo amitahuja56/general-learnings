@@ -1,21 +1,37 @@
 {
-  "name": "nodeash",
-  "description": "",
-  "main": "app.js",
-  "authors": [
+    "name": "nodeash",
+    "description": "",
+    "main": "app.js",
+    "authors": [
     "AMIT\\amit <aahuja13@sapient.com>"
   ],
-  "license": "ISC",
-  "homepage": "",
-  "ignore": [
+    "license": "ISC",
+    "homepage": "",
+    "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
   ],
-  "dependencies": {
-    "bootstrap": "^3.3.7",
-    "font-awesome": "^4.7.0"
-  }
+    "dependencies": {
+        "bootstrap": "^3.3.7",
+        "font-awesome": "^4.7.0"
+    },
+    "overrides": {
+        "bootstrap": {
+            "main": [
+                "less/bootstrap.less",
+                "dist/js/bootstrap.js",
+                "dist/css/bootstrap.css" 
+            ]
+        },
+         "font-awesome": {
+            "main": [
+                "less/font-awesome.less",
+                "scss/font-awesome.scss",
+                "css/font-awesome.css"
+            ]
+        }
+    }
 }
