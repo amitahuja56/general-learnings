@@ -2,18 +2,51 @@ var express = require('express');
 
 var app = express();
 
-var port = 2210;
+var bookRouter = require('./src/routes/bookroutes.js')
+
+var port = 2209;
 
 app.use(express.static('public'));
-app.use(express.static('src/views'));
+
+//bootsrtap story template index render
+
+//app.use(express.static('src/views'));
+//app.use(express.static('src/views')); 
+
+// handlebars thing
+
+//var handlebars = require('express-handlebars');
+//app.set('views','./src/views');
+//app.engine('.hbs', handlebars({extname: '.hbs'}));
+//var handlebarsObjcet = {
+//    yo: 'baba ji'
+//}
+//app.set('view engine', '.hbs');
+//app.get('/', function (req, res) {
+//    res.render('index',handlebarsObjcet);    
+//}); 
+
+
+app.set('views', './src/views');
+app.set('view engine', 'ejs');
+
+var ejsObject = {
+    titileString: "Home",
+    navArray: [{
+        Link: "/books",
+        Text: "books"
+    }, {
+        Link: "/authors",
+        Text: "authors"
+    }]
+};
 
 app.get('/', function (req, res) {
-    res.send('hello world');
+    res.render('index', ejsObject);
 });
 
-app.get('/books', function (req, res) {
-    res.send('hello books');
-});
+app.use('/books', bookRouter);
+
 
 app.listen(port, function (err) {
     if (err) {
