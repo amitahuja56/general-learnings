@@ -2,7 +2,16 @@ var express = require('express');
 
 var app = express();
 
-var bookRouter = require('./src/routes/bookroutes.js')
+var navArray = [{
+        Link: "/books",
+        Text: "books"
+    }, {
+        Link: "/authors",
+        Text: "authors"
+    }];
+
+var bookRouter = require('./src/routes/bookroutes.js')(navArray);
+var adminRouter = require('./src/routes/adminroutes')(navArray);
 
 var port = 2209;
 
@@ -32,13 +41,7 @@ app.set('view engine', 'ejs');
 
 var ejsObject = {
     titileString: "Home",
-    navArray: [{
-        Link: "/books",
-        Text: "books"
-    }, {
-        Link: "/authors",
-        Text: "authors"
-    }]
+    navArray: navArray
 };
 
 app.get('/', function (req, res) {
@@ -46,7 +49,7 @@ app.get('/', function (req, res) {
 });
 
 app.use('/books', bookRouter);
-
+app.use('/admin', adminRouter);
 
 app.listen(port, function (err) {
     if (err) {
