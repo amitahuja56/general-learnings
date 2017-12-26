@@ -3,3 +3,5 @@
 3. brackets file tab
 4. Brackets Icons
 5. Brackets Css Color Preview
+6. Brackets snippets
+7. 

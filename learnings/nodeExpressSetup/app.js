@@ -2,11 +2,21 @@ var express = require('express');
 
 var app = express();
 
-var bookRouter = require('./src/routes/bookroutes.js')
+var navArray = [{
+        Link: "/books",
+        Text: "books"
+    }, {
+        Link: "/authors",
+        Text: "authors"
+    }];
+
+var bookRouter = require('./src/routes/bookroutes.js')(navArray);
+var authRouter = require('./src/routes/authroutes.js')(navArray);
 
 var port = 2209;
 
 app.use(express.static('public'));
+
 
 //bootsrtap story template index render
 
@@ -30,23 +40,20 @@ app.use(express.static('public'));
 app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
-var ejsObject = {
+var homeObject = {
     titileString: "Home",
-    navArray: [{
-        Link: "/books",
-        Text: "books"
-    }, {
-        Link: "/authors",
-        Text: "authors"
-    }]
+    navArray: navArray
 };
 
+//routes 
+
 app.get('/', function (req, res) {
-    res.render('index', ejsObject);
+    res.render('index', homeObject);
 });
 
 app.use('/books', bookRouter);
 
+app.use('/authors', authRouter);
 
 app.listen(port, function (err) {
     if (err) {
