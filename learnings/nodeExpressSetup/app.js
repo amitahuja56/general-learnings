@@ -12,6 +12,7 @@ var navArray = [{
 
 var bookRouter = require('./src/routes/bookroutes.js')(navArray);
 var authRouter = require('./src/routes/authroutes.js')(navArray);
+var adminRouter = require('./src/routes/adminroutes')(navArray);
 
 var port = 2209;
 
@@ -54,6 +55,7 @@ app.get('/', function (req, res) {
 app.use('/books', bookRouter);
 
 app.use('/authors', authRouter);
+app.use('/admin', adminRouter);
 
 app.listen(port, function (err) {
     if (err) {

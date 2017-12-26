@@ -1,0 +1,36 @@
+--oops
+--mongo
+-- cross browser devdelopmen
+-- css 3 
+-- html5 games
+-- bootstrap
+--webpacks
+--closures
+-- asynchronous programming
+--- AJAX
+-- Testing cross-browser, cross-platform and cross-device compatibility for inconsistencie
+4. Worked with Web Services (REST, SOAP)
+--Wordpress 
+Drupal
+ASP.net
+CORS
+.NET Programming & Database Knowledge, CORS
+SEO
+Backbone 
+Ionic 
+react native
+Fluent in Unix environment
+accessibility 
+agile 
+
+
+Pluses:
+Working experience in EC2 and Docker/ECS/containerization technologies.
+Familiarity with developing and integrating with microservices.
+Open source contributor.
+Experience using Monitoring/Alerting tools such as ELK stack, NewRelic, GrayLog and CloudWatch.
+Strong object-oriented design and coding skills
+Working knowledge of a server-side programing languages (PHP, Ruby, Python, Java, etc)
+Experience with at least one front-end javascript framework (React, Angular, Backbone, etc)
+Strong CSS skills
+Solid understanding of data structures and algorithms

@@ -1,5 +1,4 @@
 var express = require('express');
-
 var bookRouter = express.Router();
 
 var router = function (navArray) {
@@ -24,14 +23,12 @@ var router = function (navArray) {
     bookRouter.route('/:id').get(function (req, res) {
         var id = req.params.id;
         res.render('singlebook', {
+
             titileString: "Book Number " + id,
             navArray: navArray,
             booksArray: booksArray[id]
         });
     });
-
     return bookRouter;
 }
-
-
 module.exports = router;
